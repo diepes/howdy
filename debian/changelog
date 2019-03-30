@@ -1,3 +1,43 @@
+howdy (2.5.1) xenial; urgency=medium
+
+  * Removed dismiss_lockscreen as it could lock users out of their system (thanks @ujjwalbe, @ju916 and many others!)
+  * Added option to disable howdy when the laptop lid is closed (thanks @accek!)
+  * Added automatic fallback to default frame color palette (thanks @Ethiarpus!)
+  * Added manual exposure setting (thanks @accek!)
+  * Fixed test command ignoring dark frame threshold (thanks @eduncan911!)
+  * Fixed import error in v4l2 recorder (thanks @timwelch!)
+
+ -- boltgolt <boltgolt@gmail.com>  Fri, 29 Mar 2019 23:02:21 +0100
+
+howdy (2.5.0) xenial; urgency=medium
+
+  * Added FFmpeg and v4l2 recorders (thanks @timwelch!)
+  * Added automatic PAM inclusion on installation
+  * Added optional notice on detection attempt (thanks @mrkmg!)
+  * Added support for grayscale frame encoding (thanks @dmig and @sapjunior!)
+  * Massively improved recognition speed (thanks @dmig!)
+  * Fixed typo in "timout" config value
+  * Removed unneeded dependencies (thanks @dmig!)
+
+ -- boltgolt <boltgolt@gmail.com>  Sun, 06 Jan 2019 14:37:41 +0100
+
+howdy (2.4.0) xenial; urgency=medium
+
+  * Cameras are now selected by path instead of by video device number (thanks @Rhiyo!)
+  * Added fallbacks to $EDITOR for the config command (thanks @yassineim!)
+  * Fixed missing cv2 module after installation (thanks @bendandersen and many others!)
+  * Fixed file permissions crashing Howdy in some cases (thanks @GJDitchfield!)
+  * Fixed howdy using python3 from local virtual environment (thanks @EdwardJB!)
+
+ -- boltgolt <boltgolt@gmail.com>  Fri, 09 Nov 2018 20:59:45 +0100
+
+howdy (2.3.1) xenial; urgency=high
+
+  * Fixed issue where `frame_width` and `frame_height` would be completely ignored (thanks @janecz-n!)
+  * Fixed security problem with remote session authentication (thanks @cccaballero!)
+
+ -- boltgolt <boltgolt@gmail.com>  Mon, 24 Sep 2018 17:49:07 +0100
+
 howdy (2.3.0) xenial; urgency=medium
 
   * Added a config option to set the frame height and width (thanks @wzrdtales!)
